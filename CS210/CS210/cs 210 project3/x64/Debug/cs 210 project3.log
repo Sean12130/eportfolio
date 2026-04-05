@@ -1,6 +1,0 @@
-﻿  ItemTracker.cpp
-C:\Users\dasj4\OneDrive\Desktop\school\CS210\CS210\ItemTracker.cpp(181,30): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  Source.cpp
-C:\Users\dasj4\OneDrive\Desktop\school\CS210\CS210\Source.cpp(27,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
-  cs 210 project3.vcxproj -> C:\Users\dasj4\OneDrive\Desktop\school\CS210\CS210\x64\Debug\cs 210 project3.exe
