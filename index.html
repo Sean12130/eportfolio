@@ -1,22 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Sean Lant ePortfolio</title>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    
+    <!-- Make the website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title shown on the browser tab -->
+    <title>Sean Lant - Computer Science ePortfolio</title>
+
+    <!-- Internal CSS for styling the page -->
+    <style>
+        /* Base styles for the entire page */
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Font choice */
+            margin: 0; /* Remove default margin */
+            background-color: #f4f6f8; /* Light background */
+            color: #333; /* Text color */
+        }
+
+        /* Header styling */
+        header {
+            background-color: #1f4e79; /* Dark blue background */
+            color: white; /* White text */
+            padding: 30px 20px; /* Top/bottom and left/right padding */
+            text-align: center; /* Center-align text */
+        }
+
+        /* Header main title */
+        header h1 {
+            margin: 0; /* Remove default margin */
+            font-size: 2.2em; /* Larger font size */
+        }
+
+        /* Header subtitle */
+        header p {
+            margin-top: 10px; /* Space above paragraph */
+            font-size: 1.1em; /* Slightly larger text */
+        }
+
+        /* Container for main content */
+        .container {
+            max-width: 1000px; /* Max width of content */
+            margin: 30px auto; /* Center the container with top/bottom margin */
+            padding: 0 20px; /* Left/right padding */
+        }
+
+        /* Section titles styling */
+        .section-title {
+            font-size: 1.6em; /* Larger font for section headers */
+            margin-bottom: 15px; /* Space below title */
+            border-bottom: 2px solid #1f4e79; /* Underline with color */
+            padding-bottom: 5px; /* Space between text and underline */
+        }
+
+        /* Grid layout for artifact cards */
+        .card-grid {
+            display: grid; /* Use CSS Grid */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+            gap: 20px; /* Space between cards */
+        }
+
+        /* Individual card styling */
+        .card {
+            background-color: white; /* White card background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Inner padding */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Light shadow */
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+        }
+
+        /* Hover effect for cards */
+        .card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Deeper shadow on hover */
+        }
+
+        /* Card headings */
+        .card h3 {
+            margin-top: 0; /* Remove top margin */
+            color: #1f4e79; /* Dark blue color */
+        }
+
+        /* Card paragraph text */
+        .card p {
+            font-size: 0.95em; /* Slightly smaller text */
+            line-height: 1.4; /* Line spacing */
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center; /* Center text */
+            padding: 20px; /* Padding inside footer */
+            margin-top: 40px; /* Space above footer */
+            background-color: #e0e0e0; /* Light grey background */
+            font-size: 0.9em; /* Slightly smaller text */
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block; /* Inline element styled as block */
+            margin-top: 10px; /* Space above button */
+            padding: 8px 14px; /* Padding inside button */
+            background-color: #1f4e79; /* Dark blue background */
+            color: white; /* White text */
+            text-decoration: none; /* Remove underline */
+            border-radius: 6px; /* Rounded corners */
+            font-size: 0.9em; /* Font size */
+        }
+
+        /* Button hover effect */
+        .btn:hover {
+            background-color: #163a5c; /* Darker blue on hover */
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Sean Lant – Computer Science ePortfolio</h1>
+<!-- Header section with title, subtitle, and navigation -->
+<header>
+    <h1>Sean Lant – Computer Science ePortfolio</h1>
+    <p>Welcome to my Computer Science ePortfolio created for the CS 499 Capstone course.</p>
 
-<p>Welcome to my Computer Science ePortfolio created for the CS 499 Capstone course.</p>
+    <!-- Navigation buttons linking to page sections -->
+    <nav style="margin-top:15px;">
+        <a href="#about" class="btn">About Me</a>
+        <a href="#artifacts" class="btn">Artifacts</a>
+        <a href="#skills" class="btn">Skills</a>
+        <a href="#contact" class="btn">Contact</a>
+    </nav>
+</header>
 
-<h2>Artifacts</h2>
+<!-- Main content container -->
+<div class="container">
 
-<ul>
-<li>Software Engineering – CS 320</li>
-<li>Algorithms and Data Structures – CS 210</li>
-<li>Databases – CS 340</li>
-</ul>
+    <!-- About Me section -->
+    <div id="about" class="section-title">About Me</div>
+    <p>
+        I am a Computer Science student completing the CS 499 Capstone course. My academic work has focused on software development, testing, algorithms, and database systems. This ePortfolio highlights projects that demonstrate my ability to design, build, test, and improve software applications. I am interested in roles related to software development, property management technology, and technical support where I can apply problem-solving and programming skills.
+    </p>
+
+    <!-- Artifacts section -->
+    <div id="artifacts" class="section-title">Artifacts</div>
+
+    <!-- Grid of artifact cards -->
+    <div class="card-grid">
+
+        <!-- Software Engineering card -->
+        <div class="card">
+            <h3>Software Engineering</h3>
+            <p><strong>Course:</strong> CS 320 – Software Testing, Automation, and Quality Assurance</p>
+            <p>This artifact demonstrates my ability to design and test software using object-oriented programming, validation, and automated testing.</p>
+            <a class="btn" href="#">View Artifact</a>
+        </div>
+
+        <!-- Algorithms and Data Structures card -->
+        <div class="card">
+            <h3>Algorithms and Data Structures</h3>
+            <p><strong>Course:</strong> CS 210 – Programming Languages</p>
+            <p>This artifact highlights my understanding of algorithms, problem-solving, and data structures such as arrays, lists, and loops.</p>
+            <a class="btn" href="#">View Artifact</a>
+        </div>
+
+        <!-- Databases card -->
+        <div class="card">
+            <h3>Databases</h3>
+            <p><strong>Course:</strong> CS 340 – Advanced Programming Concepts</p>
+            <p>This artifact demonstrates my skills in working with databases, managing data, and building applications that store and retrieve information.</p>
+            <a class="btn" href="#">View Artifact</a>
+        </div>
+
+    </div>
+
+    <!-- Technical Skills section -->
+    <div id="skills" class="section-title">Technical Skills</div>
+
+    <!-- List of technical skills -->
+    <ul>
+        <li>Programming Languages: Java, Python, C++</li>
+        <li>Software Development: Object-Oriented Programming, Debugging, Unit Testing</li>
+        <li>Algorithms and Data Structures: Lists, Arrays, Searching, Sorting</li>
+        <li>Databases: MongoDB, Data Storage, Data Retrieval</li>
+        <li>Tools: GitHub, Visual Studio, Eclipse, Jupyter Notebook</li>
+    </ul>
+
+    <!-- Contact section -->
+    <div id="contact" class="section-title">Contact</div>
+    <p>You can view my work and connect with me through the following platforms:</p>
+
+    <!-- Contact information -->
+    <ul>
+        <li>GitHub: Add your GitHub profile link here</li>
+        <li>Email: Add your professional email here</li>
+    </ul>
+
+</div>
+
+<!-- Footer section -->
+<div class="footer">
+    <p>© 2026 Sean Lant | Computer Science ePortfolio</p>
+</div>
 
 </body>
 </html>
